@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/ed8665bf0e.js" crossorigin="anonymous"></script>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>sjd-portfolio</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <header>
+        <nav class="z-depth-0 orange accent-4">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo center">sjd</a>
+              <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav green accent-2" id="mobile-menu">
+            <li><a href="#home" class="sidenav-align white-text">home</a></li>
+            <li><a href="#about" class="sidenav-align white-text sidenav-style">about</a></li>
+            <li><a href="#contact" class="sidenav-align white-text">contact</a></li>
+          </ul>
+    </header>
+
+    <main>
+        <section class="container section scrollspy" id="home">
+            <div class="row">
+                <div class="col s12 m12 l6 center-align">
+                    <h1>My Portfolio</h1>
+                    <p>A website made by me with the use of materialize framework and font awesome icons.</p>
+                    <p></p>
+                </div>                
+                <div class="col l6 hide-on-med-and-down">
+                    <img src="img/undraw-coding.png" alt="undraw illustration person on laptop" >
+                </div>
+            </div>
+        </section>
+
+        <!--parallax-->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/egg2.jpg" alt="emoji egg">
+            </div>
+        </div> 
+
+        <!--about-->
+        <section class="container section scrollspy" id="about">
+            <div class="row">
+                <div class="col l6 hide-on-med-and-down">
+                    <img src="img/undraw-profile.png" alt="undraw illustration person on laptop" class="responsive-img hide-on-med-and-down">
+                </div>
+                <div class="col s12 m12 l6 center-align">
+                    <h1>About me</h1>
+                    <p>I'm currently finishing my diploma course, Information Communication Technology in ITECH branch of Polytechnic University of the Philippines.</p>
+
+                    <p>Reach out to me at the resources below.</p>
+                </div>                    
+                <div class="col s12 m12 l12">
+                    <img src="img/cert1.png" alt="tesda cwd certificate" class="responsive-img materialboxed">
+
+                    <p class="center-align cert-heading">Training certificate from Excel Training Center in Creative Web Deisgn.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <img src="img/cert2.png" alt="udemy basic html and css certificate" class="responsive-img materialboxed">
+
+                    <p class="center-align cert-heading">Training Certificate in Udemy for Basic Html and CSS.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <img src="img/cert3.png" alt="udemy bootstrap certificate" class="responsive-img materialboxed">
+
+                    <p class="center-align cert-heading">Training Certificate in Udemy for Bootstrap Framework.</p>
+                </div>
+            </div>
+        </section>     
+        
+        <!--parallax--> 
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/painted-green.jpg" alt="wall painted green">
+            </div>
+        </div> 
+
+        <!--contact-->
+        <section class="section" id="contact">
+            <div class="center align">
+                <h1>Contact me</h1>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:2.soutannedaproza@gmail.com">2.soutannedaproza@gmail.com</a></p>
+                <p><i class="fab fa-twitter"></i> <a href="twitter.com/captainteyn">@captainteyn</a></p>
+                <p><i class="fab fa-github-alt"></i> <a href="github.com">sjd-student</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="light-blue darken-4">
+        <div class="footer-copyright light-blue darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <p class="white-text left-align">Copyright &copy 2021</p>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <p class="white-text right-align">Made by me</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav({
+                preventScrolling:true,
+                draggable:true
+            });
+            $('.parallax').parallax();
+            $('.scrollspy').scrollSpy();
+            $('.materialbox').materialbox();             
+        });
+    </script>
+</body>
+</html>
